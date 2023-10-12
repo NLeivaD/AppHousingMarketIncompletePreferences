@@ -1,6 +1,6 @@
-# Shiny App - Housing Market Incomplete Preferences
+# Shiny App - Shapley-Scarf housing markets with indecisive agents
 
-This repository store the source code of the Shinny App that I developed as a research assistant of professo Juan Pablo Torres-Martinez at my second year of Master in Economics in University of Chile. This app find the core and strong core  to get the core and the strong core in a Housing Market with agents that have incomplete preferences.
+This repository store the source code of the Shinny App that I developed as a research assistant of professor Juan Pablo Torres-Martinez at my second year of Master in Economics in University of Chile. This app find the core and strong core in a Housing Market with agents that have incomplete preferences. Is based on the paper "[On Housing Markets with Indecisive Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4461572)" by Emilio Guamán and Juan Pablo Torres-Martínez (2023) and is assumed that the user of the app and reader of this document is familiarized with the paper and topics from a Shapley-Scarf Housing Market. [You can find the app here.](https://nleivad.shinyapps.io/apphousingmarketincompletepreferences/)
 
 In the files you will find:  
 - 1
