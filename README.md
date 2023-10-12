@@ -3,11 +3,15 @@
 This repository store the source code of the Shinny App that I developed as a research assistant of professor Juan Pablo Torres-Martinez at my second year of Master in Economics in University of Chile. This app find the core and strong core in a Housing Market with agents that have incomplete preferences. Is based on the paper "[On Housing Markets with Indecisive Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4461572)" by Emilio Guamán and Juan Pablo Torres-Martínez (2023) and is assumed that the user of the app and reader of this document is familiarized with the paper and topics from a Shapley-Scarf Housing Market. [You can find the app here.](https://nleivad.shinyapps.io/apphousingmarketincompletepreferences/)
 
 In the files you will find:  
-- 1
-- 2
-- 3
-- 4
-- 5
+- app.R              : The script that contains the user interface definition and server process that mantains the app.
+- Identification.R   : The script that creates a function to read the user input from the app and return a list of the input read as numeric ordered pairs.
+- CheckPreferences.R : The script that creates a function to identify the completeness of all agents preferences and incomparable pairs of houses for each agent.
+- SC.R               :The script that creates a function to apply the Sequential Completion Algorithm (SC) defined in the paper and creates a completion of an agent's incomplete preferences that mantains transitivity of the preferences.
+    * CheckTransitivity.R : The script that creates a function to check if the preferences are transitive.
+- GetScenarios.R     : The script that creates a function to get all possible combinations from the completions made by SC algorithm for each agent.
+    * PreferenceMatrix.R  : The script that creates a function to create the preference matrix from a scenario and will be inputed in the `toptrading` function from the package `matchingR`.
+- GetCore.R          : The script that creates a function to implement the Top Trading Cycles Algorithm (TTC) to each scenario, using the `toptrading` function from the package `matchingR` and compute the core.
+- GetStrongCore.R    : The script that creates a function to compute the strong core from the matchings in the core.  
 
 Next the instructions you must follow in order to the app working correctly. Examples are made in base to the example 1 of the paper:  
 1. First you must input the number of agents in this housing maket, everyone is owner of a house indexed with the agent's number. Example: input as Number of Agents 4.
